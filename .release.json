@@ -4,6 +4,18 @@
     "releaseName": "Release %s"
   },
   "changelogCommand": "git log --pretty=format:'* %s (%h)' [REV_RANGE]",
-  "buildCommand": "node build.js; tar -czvf foo-${src.tagName}.tar.gz dist",
-  "afterReleaseCommand": "echo Successfully released ${version} to ${dist.repo}."
+  "buildCommand": "node build.js; tar -czvf test-${dist.tagName}.tar.gz dist",
+  "dist": {
+    "repo": false,
+    "stageDir": ".stage",
+    "baseDir": "dist",
+    "files": ["**/*"],
+    "pkgFiles": null,
+    "commitMessage": "Release %s",
+    "tagName": "%s",
+    "tagAnnotation": "Release %s",
+    "beforeStageCommand": false,
+    "afterReleaseCommand": "echo Successfully released ${version} to ${dist.repo}.",
+    "githubAssets": false
+  }
 }
