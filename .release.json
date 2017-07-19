@@ -3,5 +3,7 @@
     "release": true,
     "releaseName": "Release %s"
   },
-  "changelogCommand": "git log --pretty=format:'* %s (%h)' [REV_RANGE]"
+  "changelogCommand": "git log --pretty=format:'* %s (%h)' [REV_RANGE]",
+  "buildCommand": "node build.js; tar -czvf foo-${src.tagName}.tar.gz dist",
+  "afterReleaseCommand": "echo Successfully released ${version} to ${dist.repo}."
 }
