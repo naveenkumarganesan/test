@@ -3,7 +3,5 @@
     "release": true,
     "releaseName": "Release %s"
   },
-  "increment": "conventional:angular",
-  "requireCleanWorkingDir":  false,
-  "changelogCommand": "git log --pretty=format:'* %s (%h)' [REV_RANGE]"
+  "requireCleanWorkingDir":  false
 }
