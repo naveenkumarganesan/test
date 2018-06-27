@@ -5,7 +5,8 @@
   "description": "Test Repo",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "release-it"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/naveenkumarganesan/test/issues"
   },
-  "homepage": "https://github.com/naveenkumarganesan/test#readme"
+  "homepage": "https://github.com/naveenkumarganesan/test#readme",
+  "devDependencies": {
+    "release-it": "^7.4.7"
+  }
 }
