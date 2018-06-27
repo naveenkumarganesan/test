@@ -1,6 +1,6 @@
 {
   "github": {
-    "release": true,
+    "release": false,
     "releaseName": "Release %s"
   },
   "requireCleanWorkingDir":  false
